@@ -8,16 +8,12 @@ export interface Props {
 
 const {
   id,
+
   image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
-  <div class="max-w-3xl mx-auto">
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  </div>
-
-    <div>
+<section class="" {...id ? { id } : {}}>
       {
         image && (
           <div class="relative m-auto max-w-5xl">
@@ -25,19 +21,18 @@ const {
               <Fragment set:html={image} />
             ) : (
               <Image
-                class="mx-auto rounded-md w-full"
+                class="h-auto max-w-full rounded-lg"
                 widths={[400, 768, 1024, 2040]}
                 sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
                 loading="eager"
-                width={1024}
-                height={576}
+                width={2048}
+                height={1536}
                 {...image}
               />
             )}
           </div>
         )
       }
-    </div> 
-  </div>
+  
 
 </section>
