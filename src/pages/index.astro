@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
+import Gallery from '~/components/widgets/Gallery.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -12,11 +13,46 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+const images = [
+  { src: '~/assets/images/fotos/IMG_7284.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7293.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7201.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7204.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7210.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7212.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7213.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7214.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7216.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7217.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7218.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7240.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7257.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7262.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7266.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7268.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7271.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7272.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7273.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7228.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7229.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/IMG_7231.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-06-06-58-53.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-08-21-10-23.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-18-10-44-29.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-19-18-22-16 2.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-19-18-22-16.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-19-18-22-17 2.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-19-18-22-17 3.jpg', alt: 'Terreno mazunte' },
+  { src: '~/assets/images/fotos/PHOTO-2024-06-19-18-22-17.jpg', alt: 'Terreno mazunte' },
+];
+
 const metadata = {
   title: 'Venta de terreno a unos minutos de Mazunte',
   ignoreTitleTemplate: true,
 };
 ---
+
+
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
@@ -266,7 +302,8 @@ const metadata = {
     image={{
       src: '~/assets/images/como-llegar/6.jpg',
       alt: 'Astronauts Image',
-    }}
+    }},
+    
   >
   <Fragment slot="content">
     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
@@ -282,6 +319,32 @@ const metadata = {
 
 
   <!-- component -->
+
+
+
+   <!-- GALERIA DE IMGS -->
+   <section class="relative md:-mt[100px] not-prose" >
+    
+    <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+Galeria de imagenes
+      </h1>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-2">
+      {images.map((image) => (
+        <Gallery
+            id={image.src}
+            image={image}
+        />
+    ))}
+    </div>
+    </section>
+   
+  <!-- /GALERIA DE IMGS -->
+
+ 
+
 
 
 
