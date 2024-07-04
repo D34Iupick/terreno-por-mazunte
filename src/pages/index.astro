@@ -59,6 +59,7 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
+  id="inicio"
     actions={[
       {
         variant: 'primary',
@@ -98,7 +99,7 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="featuresss"
+    id="servicios"
     tagline="Cuenta con"
     title="Servicios"
     subtitle=""
@@ -133,6 +134,7 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+  id="ubicacion"
     isReversed
     tagline="Algunas"
     title="Fotos"
@@ -330,8 +332,8 @@ const metadata = {
 
 
    <!-- GALERIA DE IMGS -->
-   <section class="relative md:-mt[100px] not-prose" >
-    
+   <section class="relative md:-mt[100px] not-prose" id="fotos">
+    <div class="mx-auto max-w-7xl p-4 md:px-8">
     <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
       <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
 Galeria de imagenes
@@ -346,6 +348,7 @@ Galeria de imagenes
         />
     ))}
     </div>
+  </div>
     </section>
    
   <!-- /GALERIA DE IMGS -->
@@ -353,7 +356,9 @@ Galeria de imagenes
   <!-- Mapas -->
 
   <Content
+  
     isReversed
+    id="playas"
     tagline="Mapas"
     title="Ubicaciones"
     items={[
@@ -562,7 +567,7 @@ Galeria de imagenes
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Distancias"
     subtitle="Información de las distancias entre algunas playas"
     tagline="Components"
@@ -618,7 +623,7 @@ Galeria de imagenes
         icon: 'flat-color-icons:database',
       },
     ]}
-  >
+  > -->
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
