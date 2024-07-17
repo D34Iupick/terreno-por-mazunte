@@ -141,7 +141,7 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Contenido del sitio',
       links: [
         { text: 'Inicio', href: '#inicio' },
         { text: 'Servicios', href: '#servicios' },
