@@ -196,7 +196,7 @@ export const footerData = {
   //   { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   // ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="src/assets/favicons/apple-touch-icon.png" alt="terreno-mazunte" loading="lazy"></img>
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="assets/favicons/apple-touch-icon.png" alt="terreno-mazunte" loading="lazy"></img>
     Desarrollado por: Eric S. Barragán · Derechos reservados.
   `,
 };
