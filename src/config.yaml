@@ -11,7 +11,7 @@ metadata:
   title:
     default: Terrreno serca de la playa
     template: '%s — Terrreno serca de la playa'
-  description: "\U0001F680 Adquiere terreno de 200 metros cuadrados a unos minutos de Mazunte y Playa Ventanilla"
+  description: "Adquiere terreno de 200 metros cuadrados y vista al mar, a unos minutos de Mazunte y Playa Ventanilla."
   robots:
     index: true
     follow: true
