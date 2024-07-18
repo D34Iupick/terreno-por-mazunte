@@ -195,8 +195,8 @@ export const footerData = {
   //   { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   //   { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   // ],
+  // esta va dentro de las notas dentro de estas arriba de Desarrollo´´ <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="assets/favicons/apple-touch-icon.png" alt="terreno-mazunte" loading="lazy"></img>
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="assets/favicons/apple-touch-icon.png" alt="terreno-mazunte" loading="lazy"></img>
     Desarrollado por: Eric S. Barragán · Derechos reservados.
   `,
 };
